@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section1">
+    <div class="container">
+        <h1 class="head1">Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab"data-searchWeather>Search Weather</p>
+        </div>
+        <div class="grant-location-container">
+        <img src="./images/location.png" alt="" width="80px" height="80px" loading="lazy" > 
+        <p>Grant Location Access</p> 
+            <p>Allow access to get Weather Information</p>
+            <button class="btn" data-grantAccess>GRANT ACCESS</button>  
+        </div>
+        <form class="search-weather-form" data-searchForm>
+            <input type="text" placeholder="Search for city" data-searchInput>
+<button class="btn" type="submit" >
+    <img src="./images/search.png" alt="" width="20px"
+    height="20px">
+</button>
+</form>
+<div class="loading-screen-container">  
+    <img src="./images/loading.gif" alt="" width="150px" height="150px">
+    <p>Loading</p>
+</div>
+<div class="user-info-container">
+    <div class="container2"><p class="name" data-city-name></p>
+    <img data-countryIcon></div>
+    <p data-weatherDesc></p>
+    <img data-weatherIcon>
+    <p data-temp></p>
+    <div class="parameter-container">
+        <div class="parameter">
+            <img src="./images/wind.png">
+            <p>Windspeed</p>
+            <p data-windSpeed></p>
+        </div>
+        <div class="parameter">
+            <img src="./images/humidity.png">
+            <p>Humidity</p>
+            <p data-Humidity></p>
+        </div>
+        <div class="parameter">
+            <img src="./images/cloud.png">
+            <p>Clouds</p>
+            <p data-cloudiness></p  >
+        </div>
+    </div>
+</div>
+       
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
